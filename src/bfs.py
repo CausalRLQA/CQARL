@@ -29,7 +29,7 @@ def main(args):
                         use_inverse=True)
 
     if args.dataset == 'msmarco':
-        _, valid = get_questions_msmarco(kg, args.test_file, True)
+        valid = get_questions_msmarco(kg, args.test_file, True)
     elif args.dataset == 'semeval':
         valid = get_questions_sem_eval(kg, args.test_file, True)
     else:

@@ -25,9 +25,9 @@ src/unifiedqa/evaluate_unifiedqa.py --dataset semeval --use_context --test_file 
                                     >> temp.tsv
 
 # Agent
-echo "Agent 1-Hop" > temp.tsv
+echo "Agent 1-Hop" >> temp.tsv
 src/evaluate.py --dataset semeval --test_file datasets/sem_test.csv --model "models/semeval_1.pt" --path_len_eval 1 >> temp.tsv
-echo "Agent 2-Hop" > temp.tsv
+echo "Agent 2-Hop" >> temp.tsv
 src/evaluate.py --dataset semeval --test_file datasets/sem_test.csv --model "models/semeval_2.pt" --path_len_eval 2 >> temp.tsv
 echo "Agent 3-Hop" >> temp.tsv
 src/evaluate.py --dataset semeval --test_file datasets/sem_test.csv --model "models/semeval_3.pt" --path_len_eval 3 >> temp.tsv

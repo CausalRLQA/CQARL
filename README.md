@@ -47,7 +47,7 @@ The `run.py` script can be used to train the agent:
 
 For example, with the configurations we used for `MS MARCO`:
 ```
-./run.py --name "msmarco_evaluation" \
+src/run.py --name "msmarco_evaluation" \
 		 --dataset "msmarco" \
 		 --steps 2000 \
 		 --supervised \
